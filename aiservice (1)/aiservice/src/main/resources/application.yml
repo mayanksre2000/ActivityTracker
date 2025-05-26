@@ -19,10 +19,14 @@ eureka :
   client :
     serviceUrl :
       defaultZone : http://localhost:8761/eureka/
-rabbitmq:
+rabbitmq:  # remember to see docker image of rabbitmq is running and in localhost:15672 we have a name of fitness.exchange
   exchange:
     name: fitness.exchange
   queue:
     name: activity.queue
   routing:
     key: activity.tracking
+gemini:
+  api:
+    url: ${GEMINI_API_URL} # these two are set in environment  variables
+    key: ${GEMINI_API_KEY}

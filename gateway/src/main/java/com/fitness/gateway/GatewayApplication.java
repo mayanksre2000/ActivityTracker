@@ -1,14 +1,13 @@
-package com.fitness.aiservice;
+package com.fitness.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AiserviceApplication {
+public class GatewayApplication {
 
 	public static void main(String[] args) {
-//		AIzaSyBdA2ggN8jAEUKIJzDwZPcSAB0anneXw9w
-		SpringApplication.run(AiserviceApplication.class, args);
+		SpringApplication.run(GatewayApplication.class, args);
 	}
 
 }
