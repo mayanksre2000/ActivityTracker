@@ -1,1 +1,5 @@
-*.yml
+#*.yml
+*.env
+target/
+.idea/
+*.log
